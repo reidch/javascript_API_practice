@@ -13,9 +13,8 @@ var makeRequest = function(url, callback){
 var requestComplete = function(){
 	if(this.status !== 200) return;
 	var jsonString = this.responseText;
-	console.log(jsonString);
 	var films = JSON.parse(jsonString);
-	var film = films[0];
+	console.log(films);
 }
 
 window.addEventListener('load', app);
