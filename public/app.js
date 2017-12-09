@@ -14,7 +14,7 @@ var requestComplete = function(){
 	if(this.status !== 200) return;
 	var jsonString = this.responseText;
 	var filmList = JSON.parse(jsonString);
-	populateSelect(filmList.results);
+	populateSelect(filmList);
 }
 
 var populateSelect = function(films){
@@ -30,5 +30,17 @@ var populateSelect = function(films){
 	}.bind(this));
 }
 
+var selectChanged = function(index, films){
+	var header = document.getElementById('film-title');
+	var date = document.getElementById('release-date');
+	var director = document.getElementById('director');
+	var description = document.getElementById('description');
+	var film = films[index];
+
+	header.innerText = film.title;
+	date.innerText = film.date;
+	director.innerText = film.director;
+	description.innerText = film.description;
+}
 
 window.addEventListener('load', app);
