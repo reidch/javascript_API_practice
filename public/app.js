@@ -38,7 +38,7 @@ var selectChanged = function(index, films){
 	var film = films[index];
 
 	header.innerText = film.title;
-	date.innerText = film.date;
+	date.innerText = film.release_date;
 	director.innerText = film.director;
 	description.innerText = film.description;
 }
