@@ -13,9 +13,22 @@ var makeRequest = function(url, callback){
 var requestComplete = function(){
 	if(this.status !== 200) return;
 	var jsonString = this.responseText;
-	var films = JSON.parse(jsonString);
-	var film = films[16];
-	console.log(film);
+	var filmList = JSON.parse(jsonString);
+	populateSelect(filmList.results);
 }
+
+var populateSelect = function(films){
+	var select = document.getElementById('film-select');
+	films.forEach(function(film){
+		var option = document.createElement('option');
+		option.innerText = film.title;
+		select.appendChild(option);
+	});
+	selectChanged(select.selectedIndex, films);
+	select.addEventListener('change', function(){
+		selectChanged(select.selectedIndex, films);
+	}.bind(this));
+}
+
 
 window.addEventListener('load', app);
