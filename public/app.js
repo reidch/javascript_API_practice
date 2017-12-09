@@ -14,7 +14,8 @@ var requestComplete = function(){
 	if(this.status !== 200) return;
 	var jsonString = this.responseText;
 	var films = JSON.parse(jsonString);
-	console.log(films);
+	var film = films[16];
+	console.log(film);
 }
 
 window.addEventListener('load', app);
