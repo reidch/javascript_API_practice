@@ -44,3 +44,7 @@ var selectChanged = function(index, films){
 }
 
 window.addEventListener('load', app);
+
+window.addEventListener('load', function(){
+	new ColumnChart();
+});
