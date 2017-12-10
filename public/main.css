@@ -10,12 +10,25 @@ h1, h3, p, ul, footer, a{
   text-shadow: 0 0 4px #000000;
 }
 
-#main-map{
-  height:500px;
-  width:500px;
+select{
+	font-size: 130%;
+	padding: 10px 13px;
+	width: 350px;
 }
 
 #column-chart{
-	height:100px;
-	width:200px;
+	height:250px;
+	width:400px;
+}
+
+button {
+	color: rgb(66, 184, 221);
+	font-size: 130%;
+	padding: 10px 13px;
+	width: 100px;
+}
+
+#main-map{
+  height:500px;
+  width:500px;
 }
