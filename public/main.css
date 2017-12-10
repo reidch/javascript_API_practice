@@ -5,25 +5,56 @@ html{
 	background-size: cover;
 }
 
-h1, h3, p, ul, footer, a{
+h1{
+	font-family: 'Libre Baskerville', serif;
+  font-size: 60px;
+	color: white;
+	text-shadow: 0 0 4px #000000;
+}
+
+h3, p, ul, footer, a{
+	font-family: 'Poppins', sans-serif;
   color: white;
   text-shadow: 0 0 4px #000000;
 }
 
+h3, p, ul, button{
+	font-size: 17px;
+}
+
+/*resizes dropdown menu*/
 select{
 	font-size: 130%;
-	padding: 10px 13px;
-	width: 350px;
+	font-family: 'Poppins', sans-serif;
+	padding: 15px 15px;
+	width: 400px;
+}
+
+h2{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 35px;
+	color: white;
+	text-shadow: 0 0 4px #000000;
+}
+
+#release-date, #director, #description{
+	font-size: 20px;
+}
+
+/*shrinks Rotten Tomatoes logo*/
+img{
+	height:50px;
+	width:120px;
 }
 
 #column-chart{
-	height:250px;
-	width:400px;
+	height:600px;
+	width:1000px;
 }
 
-button {
+/*resizes bounce button*/
+button{
 	color: rgb(66, 184, 221);
-	font-size: 130%;
 	padding: 10px 13px;
 	width: 100px;
 }
