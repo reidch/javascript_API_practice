@@ -4,7 +4,14 @@ var app = function(){
 }
 
 var initialize = function() {
-	var mainMap = new MapWrapper();
+	var mapDiv = document.getElementById('main-map');
+	var center = {lat: 35.696233, lng: 139.570431};
+	var mainMap = new MapWrapper(mapDiv, center, 15);
+	mainMap.addMarker(center);
+	mainMap.addClickEvent();
+
+	var bounceButton = document.querySelector('#button-bounce-markers')
+	bounceButton.addEventListener('click', mainMap.bounceMarkers.bind(mainMap))
 }
 
 window.addEventListener('load', initialize);
