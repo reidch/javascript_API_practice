@@ -1,0 +1,10 @@
+body{
+  background-image: url("http://christandpopculture.com/wp-content/uploads/2014/08/20140816.ghibliA.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1, h3, p, ul, footer, a{
+  color: white;
+  text-shadow: 0 0 4px #000000;
+}
