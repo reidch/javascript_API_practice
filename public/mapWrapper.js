@@ -7,8 +7,8 @@ var MapWrapper = function(container, coords, zoom){
 }
 
 var icon = {
-	url: "totoro.jpg",
-	scaledSize: new google.maps.Size(65, 65),
+	url: "totoro.png",
+	scaledSize: new google.maps.Size(55, 80),
 	origin: new google.maps.Point(0, 0),
 	anchor: new google.maps.Point(0, 0)
 };
