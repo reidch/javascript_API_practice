@@ -8,3 +8,13 @@ h1, h3, p, ul, footer, a{
   color: white;
   text-shadow: 0 0 4px #000000;
 }
+
+#main-map{
+  height:300px;
+  width:300px;
+}
+
+#column-chart{
+	height:100px;
+	width:200px;
+}

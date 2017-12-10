@@ -3,6 +3,12 @@ var app = function(){
 	makeRequest(url, requestComplete);
 }
 
+var initialize = function() {
+	var mainMap = new MapWrapper();
+}
+
+window.addEventListener('load', initialize);
+
 var makeRequest = function(url, callback){
 	var request = new XMLHttpRequest();
 	request.open("GET", url);
