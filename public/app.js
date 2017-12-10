@@ -6,7 +6,7 @@ var app = function(){
 var initialize = function() {
 	var mapDiv = document.getElementById('main-map');
 	var center = {lat: 35.696233, lng: 139.570431};
-	var mainMap = new MapWrapper(mapDiv, center, 15);
+	var mainMap = new MapWrapper(mapDiv, center, 10);
 	mainMap.addMarker(center);
 	mainMap.addClickEvent();
 
